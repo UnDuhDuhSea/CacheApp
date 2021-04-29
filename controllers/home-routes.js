@@ -5,7 +5,7 @@ router.get('/', async (req, res) => {
   try {
     res.render('homepage', {});
     // Update with res.render once handlebars are complete
-    res.status(200).json('Hello Homepage');
+    // res.status(200).json("Hello Homepage");
   } catch (err) {
     res.status(500).json(err);
   }
@@ -28,7 +28,7 @@ router.get('/login', (req, res) => {
   }
   res.render('login');
   // Update with res.render once handlebars are complete
-  res.status(200).json('Hello Login');
+  // res.status(200).json("Hello Login");
 });
 
 router.get('/signup', (req, res) => {
@@ -38,7 +38,7 @@ router.get('/signup', (req, res) => {
   }
   res.render('signup');
   // Update with res.render once handlebars are complete
-  res.status(200).json('Hello Signup');
+  // res.status(200).json("Hello Signup");
 });
 
 module.exports = router;
