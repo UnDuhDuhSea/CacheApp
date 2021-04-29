@@ -21,9 +21,9 @@ router.get('/dashboard', async (req, res) => {
   }
 });
 
-router.get('/create-expense', async (req, res) => {
+router.get('/create-budget', async (req, res) => {
   try {
-    res.render('create-expense', {});
+    res.render('create-budget', {});
     // Update res.render once handlebars are complete
   } catch (err) {
     res.status(500).json(err);
