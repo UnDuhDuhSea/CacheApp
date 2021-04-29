@@ -30,7 +30,7 @@ User.init(
             type: DataTypes.STRING,
             allowNull: false,
             validate: {
-                len: [5], //Make min 8 after all testing is done
+                len: [8], //Make min 8 after all testing is done
             },
         },
     },
@@ -53,7 +53,7 @@ User.init(
         timestamps: false,
         freezeTableName: true,
         underscored: true,
-        modelName: "User",
+        modelName: "users",
     }
 );
 
