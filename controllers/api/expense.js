@@ -3,7 +3,7 @@ const router = require('express').Router();
 
 router.post('/', async (req, res) => {
   try {
-    res.status(200).json('Add a new expense');
+    res.status(200).json({});
   } catch (err) {
     res.status(400).json(err);
   }
@@ -11,7 +11,7 @@ router.post('/', async (req, res) => {
 
 router.put('/:id', async (req, res) => {
   try {
-    res.status(200).json('Record an expense');
+    res.status(200).json({});
   } catch (err) {
     res.status(400).json(err);
   }
@@ -19,7 +19,7 @@ router.put('/:id', async (req, res) => {
 
 router.delete('/:id', async (req, res) => {
   try {
-    res.status(200).json('Delete expense');
+    res.status(200).json({});
   } catch (err) {
     res.status(500).json(err);
   }

@@ -5,7 +5,6 @@ router.get('/', async (req, res) => {
   try {
     res.render('homepage', {});
     // Update res.render once handlebars are complete
-    // res.status(200).json("Hello Homepage");
   } catch (err) {
     res.status(500).json(err);
   }
@@ -16,7 +15,6 @@ router.get('/dashboard', async (req, res) => {
     // add find user by PK and get their info and include all their expenses to display
     res.render('dashboard', {});
     // Update res.render once handlebars are complete
-    res.status(200).json('Hello dashboard');
   } catch (err) {
     res.status(500).json(err);
   }
@@ -24,9 +22,8 @@ router.get('/dashboard', async (req, res) => {
 
 router.get('/create-expense', async (req, res) => {
   try {
-    res.render('', {});
+    res.render('create-expense', {});
     // Update res.render once handlebars are complete
-    res.status(200).json('Hello Create Expense');
   } catch (err) {
     res.status(500).json(err);
   }
@@ -34,9 +31,8 @@ router.get('/create-expense', async (req, res) => {
 
 router.get('/record-expense', async (req, res) => {
   try {
-    res.render('', {});
+    res.render('record-expense', {});
     // Update res.render once handlebars are complete
-    res.status(200).json('Hello Record Expense');
   } catch (err) {
     res.status(500).json(err);
   }
@@ -49,7 +45,6 @@ router.get('/login', (req, res) => {
   }
   res.render('login');
   // Update res.render once handlebars are complete
-  // res.status(200).json("Hello Login");
 });
 
 router.get('/signup', (req, res) => {
@@ -59,7 +54,6 @@ router.get('/signup', (req, res) => {
   }
   res.render('signup');
   // Update res.render once handlebars are complete
-  // res.status(200).json("Hello Signup");
 });
 
 module.exports = router;
