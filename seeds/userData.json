@@ -1,21 +1,21 @@
 [
   {
-    "name": "Tyler",
+    "username": "Tyler",
     "email": "tafimba@gmail.com",
     "password": "password"
   },
   {
-    "name": "Brian",
+    "username": "Brian",
     "email": "hernandez.briant@gmail.com",
     "password": "password"
   },
   {
-    "name": "Christian",
+    "username": "Christian",
     "email": "payanstocks@gmail.com",
     "password": "password"
   },
   {
-    "name": "Javier",
+    "username": "Javier",
     "email": "javier21perez98@gmail.com",
     "password": "password"
   }
