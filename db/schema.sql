@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS cacheapp_db;
+
+CREATE DATABASE cacheapp_db;
