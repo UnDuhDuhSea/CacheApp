@@ -3,6 +3,9 @@ const { User, Budget } = require('../models');
 const withAuth = require('../util/withAuth');
 
 router.get('/', async (req, res) => {
+  if (req.session.logged_in) {
+    res.redirect('/dashboard');
+  }
   try {
     res.render('homepage', {});
   } catch (err) {
@@ -12,7 +15,7 @@ router.get('/', async (req, res) => {
 
 router.get('/dashboard', withAuth, async (req, res) => {
   try {
-    const userBudgetData = await User.findByPk(req.session.id, {
+    const userBudgetData = await User.findByPk(req.session.user_id, {
       attributes: ['username'],
       include: [
         {
