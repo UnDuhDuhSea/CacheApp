@@ -5,7 +5,6 @@ const { User, Budget } = require('../models');
 router.get('/', async (req, res) => {
   try {
     res.render('homepage', {});
-    // Update res.render once handlebars are complete
   } catch (err) {
     res.status(500).json(err);
   }
@@ -13,10 +12,22 @@ router.get('/', async (req, res) => {
 
 router.get('/dashboard', async (req, res) => {
   try {
-    // add find user by PK and get their info and include all their expenses to display
-    res.render('dashboard', {});
-    // Update res.render once handlebars are complete
+    const userBudgetData = await User.findByPk(req.session.id, {
+      attributes: ['username'],
+      include: [
+        {
+          model: Budget,
+        },
+      ],
+    });
+    const userBudget = userBudgetData.get({ plain: true });
+    res.render('dashboard', {
+      ...userBudget,
+      expenses: userBudget.budgets,
+      logged_in: req.session.logged_in,
+    });
   } catch (err) {
+    console.log(err);
     res.status(500).json(err);
   }
 });
