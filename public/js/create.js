@@ -1,26 +1,26 @@
 const newFormHandler = async (event) => {
     event.preventDefault();
 
-    const title = document.querySelector("#newpost-title").value.trim();
-    const description = document.querySelector("#newpost-des").value.trim();
+    const title = document.querySelector("#title").value.trim();
+    const budget_amount = document.querySelector("#plannedAmount").value.trim();
 
-    if (title && description) {
-        const response = await fetch("/api/posts", {
+    if (title && budget_amount) {
+        const response = await fetch("/api/expense", {
             method: "POST",
-            body: JSON.stringify({ title, description }),
+            body: JSON.stringify({ title, budget_amount }),
             headers: {
                 "Content-Type": "application/json",
             },
         });
 
         if (response.ok) {
-            document.location.replace("/profile");
+            document.location.replace("/dashboard");
         } else {
-            alert("Failed to create project");
+            alert("Failed to create budget");
         }
     }
 };
 
 document
-    .querySelector(".create-post")
+    .querySelector("#createBudget")
     .addEventListener("submit", newFormHandler);
