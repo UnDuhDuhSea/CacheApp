@@ -1,26 +1,55 @@
+const withAuth = require("../../util/withAuth");
+const { Budget } = require('../../models');
 const router = require('express').Router();
-// Require models when complete
-const { User, Budget } = require('../../models');
 
-router.post('/', async (req, res) => {
+router.post("/", withAuth, async (req, res) => {
   try {
-    res.status(200).json({});
+    const newExpense = await Budget.create({
+      ...req.body,
+      user_id: req.session.user_id,
+    });
+
+    res.status(200).json(newExpense);
   } catch (err) {
     res.status(400).json(err);
   }
 });
 
-router.put('/:id', async (req, res) => {
+router.put("/:id", withAuth, async (req, res) => {
   try {
-    res.status(200).json({});
+    const reportExpense = await Budget.update(req.body, {
+      where: {
+        id: req.params.id,
+        user_id: req.session.user_id,
+      },
+    });
+
+    if (!reportExpense) {
+      res.status(404).json({ message: "No Budget found with this id!" });
+      return;
+    }
+
+    res.status(200).json(reportExpense);
   } catch (err) {
-    res.status(400).json(err);
+    res.status(500).json(err);
   }
 });
 
-router.delete('/:id', async (req, res) => {
+router.delete("/:id", withAuth, async (req, res) => {
   try {
-    res.status(200).json({});
+    const delExpense = await Budget.destroy({
+      where: {
+        id: req.params.id,
+        user_id: req.session.user_id,
+      },
+    });
+
+    if (!delExpense) {
+      res.status(404).json({ message: "No Budget found with this id!" });
+      return;
+    }
+
+    res.status(200).json(delExpense);
   } catch (err) {
     res.status(500).json(err);
   }
