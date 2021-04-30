@@ -3,11 +3,12 @@ const { User, Budget } = require('../models');
 const withAuth = require('../util/withAuth');
 
 router.get('/', async (req, res) => {
-  if (req.session.logged_in) {
-    res.redirect('/dashboard');
-  }
   try {
-    res.render('homepage', {});
+    if (!req.session.logged_in) {
+      res.render('homepage');
+    } else {
+      res.redirect('/dashboard');
+    }
   } catch (err) {
     res.status(500).json(err);
   }
