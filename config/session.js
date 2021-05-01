@@ -11,7 +11,7 @@ if (!process.env.SECRET) {
 // Configure session options
 const sess = {
   secret: process.env.SECRET,
-  cookie: {},
+  cookie: { maxAge: 1800000 },
   resave: false,
   // Wait to save session until the user logs in
   saveUninitialized: false,
