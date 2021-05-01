@@ -16,6 +16,7 @@ window.addEventListener('load', (event) => {
         setTimeout(updateCounter, 1);
       } else {
         counter.innerText = target;
+        counter.innerText = '$' + counter.innerText;
       }
     };
     updateCounter();
