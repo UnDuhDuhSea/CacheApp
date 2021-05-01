@@ -46,9 +46,22 @@ router.get('/create-budget', withAuth, async (req, res) => {
   }
 });
 
-router.get('/record-expense', withAuth, async (req, res) => {
+router.get('/edit-budget/:id', withAuth, async (req, res) => {
   try {
-    res.render('record-expense', {
+    const budgetData = await Budget.findOne({
+      where: {
+        id: req.params.id,
+        user_id: req.session.user_id,
+      },
+    });
+
+    if (!budgetData) {
+      res.status(404).json({ message: 'No Budget found with this id!' });
+      return;
+    }
+    const budget = budgetData.get({ plain: true });
+    res.render('edit-budget', {
+      budget,
       logged_in: req.session.logged_in,
     });
   } catch (err) {
