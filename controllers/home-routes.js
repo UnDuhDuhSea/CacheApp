@@ -24,16 +24,15 @@ router.get('/dashboard', withAuth, async (req, res) => {
         },
       ],
     });
-    Budget.sum('budget_amount', {
+    const planned_total = await Budget.sum('budget_amount', {
       where: { user_id: req.session.user_id },
-    }).then((planned_total) => {
-      const userBudget = userBudgetData.get({ plain: true });
-      res.render('dashboard', {
-        planned_total,
-        ...userBudget,
-        expenses: userBudget.budgets,
-        logged_in: req.session.logged_in,
-      });
+    });
+    const userBudget = userBudgetData.get({ plain: true });
+    res.render('dashboard', {
+      planned_total,
+      ...userBudget,
+      expenses: userBudget.budgets,
+      logged_in: req.session.logged_in,
     });
   } catch (err) {
     console.log(err);
