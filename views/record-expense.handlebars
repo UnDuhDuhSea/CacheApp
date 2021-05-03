@@ -1,0 +1,28 @@
+<div class="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+  <div class="items-center md:justify-center lg:justify-center justify-center max-w-md w-full space-y-8 ">
+    <h2 class="text-gray-900 text-lg font-medium title-font mb-5">Record an Expense</h2>
+    <div class="relative mb-4">
+      <select
+        class="border border-gray-300 rounded-full text-gray-600 h-10 pl-5 pr-10 bg-white hover:border-green-400 focus:outline-none appearance-none"
+        id="title" name="title">
+        <option>Select Category</option>
+        <option>Housing</option>
+        <option>Utilities</option>
+        <option>Food</option>
+        <option>Travel</option>
+      </select>
+    </div>
+    <div class="relative mb-4">
+      <label for="actualAmount" class="leading-7 text-sm text-gray-600">Expense Amount:</label>
+      <input type="text" id="actualAmount" name="actualAmount"
+        class="w-full bg-white rounded border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+    </div>
+    <br>
+    <a href='/dashboard'>
+      <button
+        class="items-center md:justify-center lg:justify-center justify-center text-white bg-green-500 border-0 py-2 px-8 focus:outline-none hover:bg-green-600 rounded text-lg">
+        Add!
+      </button>
+    </a>
+  </div>
+</div>

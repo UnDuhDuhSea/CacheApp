@@ -1,30 +1,31 @@
-<div class="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+<section class="text-gray-600 body-font relative flex items-center justify-center">
   <form id="editBudget">
-    <div class="max-w-md w-full space-y-8 ">
-      <h2 class="text-gray-900 text-lg font-medium title-font mb-5">Record an Expense for:</h2>
-      <div class="relative mb-4">
-        <h1 class="text-3xl">
-          {{budget.title}}: {{budget.sub_category}}
-        </h1>
+    <div class="container px-5 py-24 mx-auto flex">
+      <div class=" bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
+        <h2 class="text-gray-900 text-lg font-medium title-font mb-5">Record an Expense for:</h2>
+        <div class="relative mb-4">
+          <h1 class="text-3xl">
+            {{ budget.title }}: {{ budget.sub_category }}
+          </h1>
+        </div>
+        <div class="relative mb-4">
+          <label for="plannedAmount" class="leading-7 text-sm text-gray-600">Current Budgeted Amount:</label>
+          <input type="text" id="plannedAmount" name="plannedAmount" value="{{budget.budget_amount}}"
+            data-id="{{budget.id}}"
+            class="w-full bg-white rounded border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+        </div>
+        <div class="relative mb-4">
+          <label for="actualAmount" class="leading-7 text-sm text-gray-600">Expense Amount:</label>
+          <input type="text" id="actualAmount" name="actualAmount" value="{{budget.amount_spent}}"
+            class="w-full bg-white rounded border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+        </div>
+        <br>
+        <button type="submit"
+          class="text-white bg-green-500 border-0 py-2 px-8 focus:outline-none hover:bg-green-600 rounded text-lg">
+          Update!
+        </button>
       </div>
-      <div class="relative mb-4">
-        <label for="plannedAmount" class="leading-7 text-sm text-gray-600">Current Budgeted Amount:</label>
-        <input type="text" id="plannedAmount" name="plannedAmount" value="{{budget.budget_amount}}"
-          data-id="{{budget.id}}"
-          class="w-full bg-white rounded border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-      </div>
-      <div class="relative mb-4">
-        <label for="actualAmount" class="leading-7 text-sm text-gray-600">Expense Amount:</label>
-        <input type="text" id="actualAmount" name="actualAmount" value="{{budget.amount_spent}}"
-          class="w-full bg-white rounded border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-      </div>
-      <br>
-      <button type="submit"
-        class="text-white bg-green-500 border-0 py-2 px-8 focus:outline-none hover:bg-green-600 rounded text-lg">
-        Update!
-      </button>
     </div>
   </form>
-</div>
-
-<script src="/js/edit-entry.js">
+</section>
+<script src="/js/edit-entry.js"></script>
