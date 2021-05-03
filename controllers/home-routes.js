@@ -24,6 +24,17 @@ router.get('/dashboard', withAuth, async (req, res) => {
         },
       ],
     });
+    Budget.sum('budget_amount', {
+      where: { user_id: 1 },
+    }).then((planned_total) => {
+      const userBudget = userBudgetData.get({ plain: true });
+      res.render('dashboard', {
+        planned_total,
+        ...userBudget,
+        expenses: userBudget.budgets,
+        logged_in: req.session.logged_in,
+      });
+    });
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
@@ -78,16 +89,5 @@ router.get('/signup', (req, res) => {
   }
   res.render('signup');
 });
-
-// router.get('/total', async (req, res) => {
-//   try {
-//     Budget.sum('budget_amount', { where: { user_id: 1 } }).then((sum) => {
-//       console.log(sum);
-//       res.status(200).json(sum);
-//     });
-//   } catch (err) {
-//     res.status(500).json(err);
-//   }
-// });
 
 module.exports = router;
