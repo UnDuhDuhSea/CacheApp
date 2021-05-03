@@ -1,4 +1,6 @@
 const counters = document.querySelectorAll('.counter');
+const total = document.querySelector('#total-amount');
+total.className += ' text-red-600';
 
 window.addEventListener('load', (event) => {
   counters.forEach((counter) => {
@@ -17,6 +19,11 @@ window.addEventListener('load', (event) => {
       } else {
         counter.innerText = target;
         counter.innerText = '$' + counter.innerText;
+      }
+      if (target < 0) {
+        total.className += ' text-red-600';
+      } else {
+        total.className += ' text-green-600';
       }
     };
     updateCounter();
