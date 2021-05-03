@@ -44,8 +44,8 @@
             <tbody class="budget-entries">
                 {{#each expenses as |expense|}}
                 <tr>
-                    <td style="color: green">${{expense.budget_amount}}</td>
-                    <td style="color: red">${{expense.amount_spent}}</td>
+                    <td class="text-green-600">${{expense.budget_amount}}</td>
+                    <td class="text-red-600">${{expense.amount_spent}}</td>
                     <td>{{expense.title}}: {{expense.sub_category}}</td>
                     <td>
                         <button class="w-4 mr-2 transform hover:text-purple-500 hover:scale-110 delete-button"
