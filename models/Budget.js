@@ -15,7 +15,10 @@ Budget.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-
+    sub_category: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
     budget_amount: {
       type: DataTypes.INTEGER,
       allowNull: false,
