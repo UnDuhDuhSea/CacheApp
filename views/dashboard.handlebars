@@ -6,13 +6,14 @@
                 <div class="container px-4 pb-16 pt-0 mx-auto">
                     <div class="flex flex-wrap -m-4 text-center">
                         <div class="p-4 w-full items-stretch">
-                            <h2 class="title-font font-small lg:text-4xl text-5xl text-gray-900">Welcome {{username}}!</h2>
+                            <h2 class="title-font font-small lg:text-4xl text-5xl text-gray-900">Welcome {{username}}!
+                            </h2>
                             <a
                                 class="self-start transform scale-75 flex title-font font-small items-center md:justify-center lg:justify-center justify-center text-gray-900">
                                 <img src="/imgs/Money - Emblem - small.png" />
                             </a>
                             <h2 class="counter title-font font-small lg:text-7xl text-5xl text-green-600"
-                                data-target="5000"></h2>
+                                data-target={{budget_total}}></h2>
                             <p class="leading-relaxed">Budget</p>
                         </div>
                     </div>
@@ -45,7 +46,7 @@
                 <tr>
                     <td style="color: green">${{expense.budget_amount}}</td>
                     <td style="color: red">${{expense.amount_spent}}</td>
-                    <td>{{expense.title}}</td>
+                    <td>{{expense.title}}: {{expense.sub_category}}</td>
                     <td>
                         <button class="w-4 mr-2 transform hover:text-purple-500 hover:scale-110 delete-button"
                             data-id={{expense.id}}>

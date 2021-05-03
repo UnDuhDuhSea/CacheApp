@@ -1,98 +1,142 @@
 [
   {
     "title": "Housing",
+    "sub_category": "Rent",
+    "budget_amount": 2200,
+    "amount_spent": 1400,
+    "user_id": 3
+  },
+  {
+    "title": "Utilites",
+    "sub_category": "Electric",
+    "budget_amount": 100,
+    "amount_spent": 60,
+    "user_id": 3
+  },
+  {
+    "title": "Travel",
+    "sub_category": "Gas",
+    "budget_amount": 200,
+    "amount_spent": 45,
+    "user_id": 3
+  },
+  {
+    "title": "Food",
+    "sub_category": "Fast Food",
+    "budget_amount": 400,
+    "amount_spent": 120,
+    "user_id": 3
+  },
+  {
+    "title": "Housing",
+    "sub_category": "Rent",
     "budget_amount": 1200,
     "amount_spent": 1000,
     "user_id": 1
   },
   {
     "title": "Utilites",
+    "sub_category": "Electric",
     "budget_amount": 300,
     "amount_spent": 180,
     "user_id": 1
   },
   {
     "title": "Travel",
+    "sub_category": "Uber",
     "budget_amount": 200,
     "amount_spent": 45,
     "user_id": 1
   },
   {
     "title": "Food",
+    "sub_category": "Groceries",
     "budget_amount": 400,
     "amount_spent": 250,
     "user_id": 1
   },
   {
     "title": "Housing",
+    "sub_category": "Mortgage",
     "budget_amount": 1200,
     "amount_spent": 1000,
     "user_id": 2
   },
   {
     "title": "Utilites",
+    "sub_category": "Gas",
     "budget_amount": 300,
     "amount_spent": 180,
     "user_id": 2
   },
   {
     "title": "Travel",
+    "sub_category": "Gasoline",
     "budget_amount": 200,
     "amount_spent": 45,
     "user_id": 2
   },
   {
     "title": "Food",
+    "sub_category": "Takeout",
     "budget_amount": 400,
     "amount_spent": 250,
     "user_id": 2
   },
   {
     "title": "Housing",
+    "sub_category": "Rent",
     "budget_amount": 1200,
     "amount_spent": 1000,
     "user_id": 3
   },
   {
     "title": "Utilites",
+    "sub_category": "Electric",
     "budget_amount": 300,
     "amount_spent": 180,
     "user_id": 3
   },
   {
     "title": "Travel",
+    "sub_category": "Bus Fare",
     "budget_amount": 200,
     "amount_spent": 45,
     "user_id": 3
   },
   {
     "title": "Food",
+    "sub_category": "Groceries",
     "budget_amount": 400,
     "amount_spent": 250,
     "user_id": 3
   },
   {
     "title": "Housing",
+    "sub_category": "Rent",
     "budget_amount": 1200,
     "amount_spent": 1000,
     "user_id": 4
   },
   {
     "title": "Utilites",
-    "budget_amount": 300,
-    "amount_spent": 180,
+    "sub_category": "Electric",
+    "budget_amount": 60,
+    "amount_spent": 45,
     "user_id": 4
   },
   {
     "title": "Travel",
+    "sub_category": "Gas",
     "budget_amount": 200,
     "amount_spent": 45,
     "user_id": 4
   },
   {
     "title": "Food",
-    "budget_amount": 400,
-    "amount_spent": 250,
+    "sub_category": "Fast Food",
+    "budget_amount": 50,
+    "amount_spent": 12,
     "user_id": 4
   }
 ]
