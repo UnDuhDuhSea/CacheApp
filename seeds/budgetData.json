@@ -1,96 +1,112 @@
 [
   {
     "title": "Housing",
+    "sub_category": "demo",
     "budget_amount": 1200,
     "amount_spent": 1000,
     "user_id": 1
   },
   {
     "title": "Utilites",
+    "sub_category": "demo",
     "budget_amount": 300,
     "amount_spent": 180,
     "user_id": 1
   },
   {
     "title": "Travel",
+    "sub_category": "demo",
     "budget_amount": 200,
     "amount_spent": 45,
     "user_id": 1
   },
   {
     "title": "Food",
+    "sub_category": "demo",
     "budget_amount": 400,
     "amount_spent": 250,
     "user_id": 1
   },
   {
     "title": "Housing",
+    "sub_category": "demo",
     "budget_amount": 1200,
     "amount_spent": 1000,
     "user_id": 2
   },
   {
     "title": "Utilites",
+    "sub_category": "demo",
     "budget_amount": 300,
     "amount_spent": 180,
     "user_id": 2
   },
   {
     "title": "Travel",
+    "sub_category": "demo",
     "budget_amount": 200,
     "amount_spent": 45,
     "user_id": 2
   },
   {
     "title": "Food",
+    "sub_category": "demo",
     "budget_amount": 400,
     "amount_spent": 250,
     "user_id": 2
   },
   {
     "title": "Housing",
+    "sub_category": "demo",
     "budget_amount": 1200,
     "amount_spent": 1000,
     "user_id": 3
   },
   {
     "title": "Utilites",
+    "sub_category": "demo",
     "budget_amount": 300,
     "amount_spent": 180,
     "user_id": 3
   },
   {
     "title": "Travel",
+    "sub_category": "demo",
     "budget_amount": 200,
     "amount_spent": 45,
     "user_id": 3
   },
   {
     "title": "Food",
+    "sub_category": "demo",
     "budget_amount": 400,
     "amount_spent": 250,
     "user_id": 3
   },
   {
     "title": "Housing",
+    "sub_category": "demo",
     "budget_amount": 1200,
     "amount_spent": 1000,
     "user_id": 4
   },
   {
     "title": "Utilites",
+    "sub_category": "demo",
     "budget_amount": 300,
     "amount_spent": 180,
     "user_id": 4
   },
   {
     "title": "Travel",
+    "sub_category": "demo",
     "budget_amount": 200,
     "amount_spent": 45,
     "user_id": 4
   },
   {
     "title": "Food",
+    "sub_category": "demo",
     "budget_amount": 400,
     "amount_spent": 250,
     "user_id": 4
