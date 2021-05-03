@@ -12,7 +12,7 @@
                                 class="self-start transform scale-75 flex title-font font-small items-center md:justify-center lg:justify-center justify-center text-gray-900">
                                 <img src="/imgs/Money - Emblem - small.png" />
                             </a>
-                            <h2 class="counter title-font font-small lg:text-7xl text-5xl text-green-600"
+                            <h2 id="total-amount" class="counter title-font font-small lg:text-7xl text-5xl"
                                 data-target={{budget_total}}></h2>
                             <p class="leading-relaxed">Budget</p>
                         </div>
@@ -44,8 +44,8 @@
             <tbody class="budget-entries">
                 {{#each expenses as |expense|}}
                 <tr>
-                    <td style="color: green">${{expense.budget_amount}}</td>
-                    <td style="color: red">${{expense.amount_spent}}</td>
+                    <td class="text-green-600">${{expense.budget_amount}}</td>
+                    <td class="text-red-600">${{expense.amount_spent}}</td>
                     <td>{{expense.title}}: {{expense.sub_category}}</td>
                     <td>
                         <button class="w-4 mr-2 transform hover:text-purple-500 hover:scale-110 delete-button"
