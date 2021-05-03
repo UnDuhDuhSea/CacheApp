@@ -20,6 +20,9 @@ window.addEventListener('load', (event) => {
         counter.innerText = target;
         counter.innerText = '$' + counter.innerText;
       }
+      if (target < 0) {
+        total.className += ' text-red-600';
+      }
     };
     updateCounter();
   });
