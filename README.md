@@ -22,7 +22,7 @@
 
 <a href="https://cache-app-io.herokuapp.com/"><h2 align="center">https://cache-app-io.herokuapp.com/</h2></a>
 
-![CacheApp](public/imgs/cacheApp-README-img.jpg)
+![CacheApp](/public/imgs/CacheApp-README-img.jpg)
 
 ## Description
 
