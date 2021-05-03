@@ -2,34 +2,6 @@
   {
     "title": "Housing",
     "sub_category": "Rent",
-    "budget_amount": 2200,
-    "amount_spent": 1400,
-    "user_id": 3
-  },
-  {
-    "title": "Utilites",
-    "sub_category": "Electric",
-    "budget_amount": 100,
-    "amount_spent": 60,
-    "user_id": 3
-  },
-  {
-    "title": "Travel",
-    "sub_category": "Gas",
-    "budget_amount": 200,
-    "amount_spent": 45,
-    "user_id": 3
-  },
-  {
-    "title": "Food",
-    "sub_category": "Fast Food",
-    "budget_amount": 400,
-    "amount_spent": 120,
-    "user_id": 3
-  },
-  {
-    "title": "Housing",
-    "sub_category": "Rent",
     "budget_amount": 1200,
     "amount_spent": 1000,
     "user_id": 1
@@ -138,5 +110,166 @@
     "budget_amount": 50,
     "amount_spent": 12,
     "user_id": 4
+  },
+  {
+    "title": "Rent",
+    "sub_category": "Housing",
+    "budget_amount": 2200,
+    "amount_spent": 2200,
+    "user_id": 5
+  },
+  {
+    "title": "Europe",
+    "sub_category": "Travel",
+    "budget_amount": 4000,
+    "amount_spent": 4200,
+    "user_id": 5
+  },
+  {
+    "title": "Water",
+    "sub_category": "Utilities",
+    "budget_amount": 50,
+    "amount_spent": 20,
+    "user_id": 5
+  },
+  {
+    "title": "McDonalds",
+    "sub_category": "Food",
+    "budget_amount": 100,
+    "amount_spent": 200,
+    "user_id": 5
+  },
+  {
+    "title": "Gucci",
+    "sub_category": "Clothing",
+    "budget_amount": 500,
+    "amount_spent": 1000,
+    "user_id": 5
+  },
+  {
+    "title": "Doctors appointment",
+    "sub_category": "Medical",
+    "budget_amount": 1000,
+    "amount_spent": 200,
+    "user_id": 5
+  },
+  {
+    "title": "Arbys",
+    "sub_category": "Food",
+    "budget_amount": 200,
+    "amount_spent": 100,
+    "user_id": 5
+  },
+  {
+    "title": "Chevy",
+    "sub_category": "Transportation",
+    "budget_amount": 700,
+    "amount_spent": 700,
+    "user_id": 5
+  },
+  {
+    "title": "College Credit Card",
+    "sub_category": "Education",
+    "budget_amount": 5000,
+    "amount_spent": 5000,
+    "user_id": 5
+  },
+  {
+    "title": "Gaming PC",
+    "sub_category": "Personal",
+    "budget_amount": 2000,
+    "amount_spent": 2000,
+    "user_id": 5
+  },
+  {
+    "title": "Streaming Platforms",
+    "sub_category": "Entertainment",
+    "budget_amount": 60,
+    "amount_spent": 80,
+    "user_id": 5
+  },
+  {
+    "title": "Gas",
+    "sub_category": "Utilities",
+    "budget_amount": 100,
+    "amount_spent": 50,
+    "user_id": 5
+  },
+  {
+    "title": "Japan",
+    "sub_category": "Travel",
+    "budget_amount": 4000,
+    "amount_spent": 3800,
+    "user_id": 5
+  },
+  {
+    "title": "Electricity",
+    "sub_category": "Utilities",
+    "budget_amount": 100,
+    "amount_spent": 70,
+    "user_id": 5
+  },
+  {
+    "title": "Supreme",
+    "sub_category": "Clothing",
+    "budget_amount": 2000,
+    "amount_spent": 1800,
+    "user_id": 5
+  },
+  {
+    "title": "Gas for car",
+    "sub_category": "Transportation",
+    "budget_amount": 500,
+    "amount_spent": 300,
+    "user_id": 5
+  },
+  {
+    "title": "BootCamp",
+    "sub_category": "Education",
+    "budget_amount": 13000,
+    "amount_spent": 10000,
+    "user_id": 5
+  },
+  {
+    "title": "Amazon",
+    "sub_category": "Personal",
+    "budget_amount": 1000,
+    "amount_spent": 700,
+    "user_id": 5
+  },
+  {
+    "title": "H&M",
+    "sub_category": "Clothing",
+    "budget_amount": 1000,
+    "amount_spent": 800,
+    "user_id": 5
+  },
+  {
+    "title": "Guess",
+    "sub_category": "Clothing",
+    "budget_amount": 1000,
+    "amount_spent": 600,
+    "user_id": 5
+  },
+  {
+    "title": "In-N-Out",
+    "sub_category": "Food",
+    "budget_amount": 500,
+    "amount_spent": 200,
+    "user_id": 5
+  },
+  {
+    "title": "Groceries",
+    "sub_category": "Food",
+    "budget_amount": 1000,
+    "amount_spent": 500,
+    "user_id": 5
+  },
+  {
+    "title": "Speeding Ticket",
+    "sub_category": "Personal",
+    "budget_amount": 550,
+    "amount_spent": 550,
+    "user_id": 5
   }
 ]
