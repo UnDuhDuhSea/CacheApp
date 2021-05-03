@@ -22,6 +22,8 @@ window.addEventListener('load', (event) => {
       }
       if (target < 0) {
         total.className += ' text-red-600';
+      } else {
+        total.className += ' text-green-600';
       }
     };
     updateCounter();
