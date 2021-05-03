@@ -1,14 +1,14 @@
 const editExpenseHandler = async (event) => {
   event.preventDefault();
 
-  const budgetedAmount = document.querySelector('#plannedAmount').value.trim();
+  const planned_amount = document.querySelector('#plannedAmount').value.trim();
   const id = document.querySelector('#plannedAmount');
-  const actualAmount = document.querySelector('#actualAmount').value.trim();
+  const amount_spent = document.querySelector('#actualAmount').value.trim();
 
-  if (budgetedAmount && actualAmount) {
-    const response = await fetch(`/api/expense/${id}`, {
+  if (planned_amount && amount_spent) {
+    const response = await fetch(`/api/expense/` + id.dataset.id, {
       method: 'PUT',
-      body: JSON.stringify({ budgetedAmount, actualAmount }),
+      body: JSON.stringify({ planned_amount , amount_spent }),
       headers: {
         'Content-Type': 'application/json',
       },
