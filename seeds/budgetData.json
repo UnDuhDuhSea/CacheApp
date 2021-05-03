@@ -2,34 +2,6 @@
   {
     "title": "Housing",
     "sub_category": "Rent",
-    "budget_amount": 2200,
-    "amount_spent": 1400,
-    "user_id": 3
-  },
-  {
-    "title": "Utilites",
-    "sub_category": "Electric",
-    "budget_amount": 100,
-    "amount_spent": 60,
-    "user_id": 3
-  },
-  {
-    "title": "Travel",
-    "sub_category": "Gas",
-    "budget_amount": 200,
-    "amount_spent": 45,
-    "user_id": 3
-  },
-  {
-    "title": "Food",
-    "sub_category": "Fast Food",
-    "budget_amount": 400,
-    "amount_spent": 120,
-    "user_id": 3
-  },
-  {
-    "title": "Housing",
-    "sub_category": "Rent",
     "budget_amount": 1200,
     "amount_spent": 1000,
     "user_id": 1
