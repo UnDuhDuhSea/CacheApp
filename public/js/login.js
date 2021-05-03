@@ -4,6 +4,8 @@ const loginFormHandler = async (event) => {
   // Collect values from the login form
   const email = document.querySelector('#email-address').value.trim();
   const password = document.querySelector('#password').value.trim();
+  const errorMessage = document.querySelector('.wrong-message');
+  const formReset = document.querySelector('#login-form');
 
   if (email && password) {
     // Send a POST request to the API endpoint
@@ -17,7 +19,8 @@ const loginFormHandler = async (event) => {
       // If successful, redirect the browser to the profile page
       document.location.replace('/dashboard');
     } else {
-      location.reload();
+      errorMessage.innerHTML = 'Incorrect Email or Password';
+      formReset.reset();
     }
   }
 };
