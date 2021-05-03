@@ -27,8 +27,12 @@ router.get('/dashboard', withAuth, async (req, res) => {
     const planned_total = await Budget.sum('budget_amount', {
       where: { user_id: req.session.user_id },
     });
+    const spent_total = await Budget.sum('amount_spent', {
+      where: { user_id: req.session.user_id },
+    });
     const userBudget = userBudgetData.get({ plain: true });
     res.render('dashboard', {
+      spent_total,
       planned_total,
       ...userBudget,
       expenses: userBudget.budgets,
