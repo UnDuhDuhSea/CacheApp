@@ -182,10 +182,24 @@
     "user_id": 5
   },
   {
-    "title": "Savings",
-    "sub_category": "Saving",
-    "budget_amount": 10000,
-    "amount_spent": 0,
+    "title": "Streaming Platforms",
+    "sub_category": "Entertainment",
+    "budget_amount": 200,
+    "amount_spent": 80,
+    "user_id": 5
+  },
+  {
+    "title": "Gas",
+    "sub_category": "Utilities",
+    "budget_amount": 100,
+    "amount_spent": 50,
+    "user_id": 5
+  },
+  {
+    "title": "Japan",
+    "sub_category": "Travel",
+    "budget_amount": 4000,
+    "amount_spent": 3800,
     "user_id": 5
   }
 ]
