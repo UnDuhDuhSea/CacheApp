@@ -10,7 +10,7 @@ const deleteEntry = async (id) => {
     // reload page
     document.location.replace('/dashboard');
   } else {
-    alert('Failed to delete expense');
+    location.reload();
   }
 };
 const budgetEntryHandler = (event) => {
