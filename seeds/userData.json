@@ -18,5 +18,10 @@
     "username": "Javier",
     "email": "javier21perez98@gmail.com",
     "password": "password"
+  },
+  {
+    "username": "Bot",
+    "email": "testBot@cacheApp.com",
+    "password": "password"
   }
 ]
