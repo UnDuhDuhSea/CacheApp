@@ -1,4 +1,6 @@
 const counters = document.querySelectorAll('.counter');
+const total = document.querySelector('#total-amount');
+total.className += ' text-red-600';
 
 window.addEventListener('load', (event) => {
   counters.forEach((counter) => {
