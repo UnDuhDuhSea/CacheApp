@@ -24,16 +24,16 @@ router.get('/dashboard', withAuth, async (req, res) => {
         },
       ],
     });
-    const planned_total = await Budget.sum('budget_amount', {
+    let planned_total = await Budget.sum('budget_amount', {
       where: { user_id: req.session.user_id },
     });
-    const spent_total = await Budget.sum('amount_spent', {
+    let spent_total = await Budget.sum('amount_spent', {
       where: { user_id: req.session.user_id },
     });
+    const budget_total = planned_total - spent_total;
     const userBudget = userBudgetData.get({ plain: true });
     res.render('dashboard', {
-      spent_total,
-      planned_total,
+      budget_total,
       ...userBudget,
       expenses: userBudget.budgets,
       logged_in: req.session.logged_in,
