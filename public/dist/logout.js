@@ -1,0 +1,1 @@
+const logout=async()=>{const a=await fetch("/api/users/logout",{method:"POST",headers:{"Content-Type":"application/json"}});a.ok?document.location.replace("/"):location.reload()};document.querySelector("#logout").addEventListener("click",logout);

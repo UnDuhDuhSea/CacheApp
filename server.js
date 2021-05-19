@@ -1,4 +1,5 @@
 require('dotenv').config();
+const compression = require('compression');
 const express = require('express');
 const sequelize = require('./config/connection');
 const router = require('./controllers');
@@ -9,6 +10,7 @@ const sessionMiddleware = require('./config/session');
 
 const PORT = process.env.PORT || 3001;
 const app = express();
+app.use(compression());
 
 // setup app middleware
 app.use(sessionMiddleware);
